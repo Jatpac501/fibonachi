@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+}
+.container {
+    flex-wrap: wrap;
+    padding: 100px 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.box__input {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 60px;
+}
+.box__str, .box__str:focus {
+    border: 0;
+    outline: 0;
+}
+.box__result {
+    opacity: 0;
+    font-size: 0px;
+    max-width: 320px;
+    word-wrap: normal;
+    border: 1px solid black;
+    transition: .3s;
+}
+.box__filters {
+    display: flex;
+    justify-content: space-between;
+    max-width: 320px;
+}
+.box__even, .box__odd {
+    opacity: 0;
+    font-size: 0px;
+    width: 150px;
+    border: 1px solid black;
+    transition: .3s;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
