@@ -3,6 +3,9 @@
     padding: 0;
     font-size: 22px;
 }
+body {
+    background: rgba(0,0,0,0.8);
+}
 .container {
     flex-wrap: wrap;
     padding: 100px 50px;
@@ -11,36 +14,63 @@
     justify-content: space-around;
 }
 .box__input {
+   
     padding: 10px;
-    border: 1px solid black;
+    border: 2px solid rgb(0, 255, 42);
+    box-shadow: 0 0 12px rgb(0, 255, 42),
+    inset 0 0 4px rgb(0, 255, 42);
     border-radius: 60px;
 }
 .box__str, .box__str:focus {
+    color: rgb(0, 255, 42);
     border: 0;
     outline: 0;
+    background: none;
+    filter: drop-shadow(0 0 2px rgb(0, 255, 42));
 }
 .box__result {
+    padding: 10px;
+    border-radius: 16px;
+    border: 2px solid rgb(0, 255, 42);
+    color:rgb(0, 255, 42);
+    filter: drop-shadow(0 0 2px rgb(0, 255, 42));
     opacity: 0;
     font-size: 0px;
-    max-width: 320px;
+    max-width: 100%;
     word-wrap: normal;
-    border: 1px solid black;
+    box-shadow: 0 0 4px rgb(0, 255, 42),
+    inset 0 0 4px rgb(0, 255, 42);
     transition: .3s;
 }
 .box__filters {
     display: flex;
     justify-content: space-between;
-    max-width: 320px;
+    width: auto;
 }
 .box__even, .box__odd {
+    border-radius: 16px;
+    padding: 5px;
     opacity: 0;
     font-size: 0px;
-    width: 150px;
-    border: 1px solid black;
+    color:rgb(0, 255, 42);
+    filter: drop-shadow(0 0 2px rgb(0, 255, 42));
+    width: 170px;
+    border: 2px solid rgb(0, 255, 42);
+    box-shadow: 0 0 4px rgb(0, 255, 42),
+    inset 0 0 4px rgb(0, 255, 42);
     transition: .3s;
 }
 .box {
     display: flex;
     flex-direction: column;
-    gap: 20px
+    gap: 20px;
+    width: 400px;
+}
+.box__button {
+    color:rgb(0, 255, 42);
+    text-decoration: 0 0 4px rgb(0, 255, 42);
+    border: 0;
+    border-radius: 16px;
+    background: rgba(0,0,0,0.2);
+    padding: 5px 12px;
 }
